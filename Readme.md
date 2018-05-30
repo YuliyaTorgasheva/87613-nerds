@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Yuliya Torgasheva](https://up.htmlacademy.ru/htmlcss/21/user/87613).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Прокопеня](https://htmlacademy.ru/profile/sera_prokop).
 
 ---
 
