@@ -26,6 +26,36 @@
       <section class="filters">
         <h2 class="visually-hidden">Фильтр шаблонов</h2>
         <!-- Здесь будет форма -->
+        Стоимость<br>
+        <form action="/echo" method="post" oninput="minpriceoutput.value=minpriceinput.value">
+          <input type="range" name="minpriceinput" id="minprice-input" min="0" max="15000" step="100">
+          От <output name="minpriceoutput">0</output>
+        </form>
+        <form action="/echo" method="post" oninput="maxpriceoutput.value=maxpriceinput.value">
+          <input type="range" name="maxpriceinput" id="maxprice-input" min="0" max="15000" step="100">
+          до <output name="maxpriceoutput">15000</output>
+        </form>
+        <form>
+          <fieldset>
+            <legend>Сетка:</legend>
+            <ul>
+              <li><input type="radio" name="templates" value="adaptive" id="filter-adaptive" checked><label for="filter-adaptive">Адаптивная</label></li>
+              <li><input type="radio" name="templates" value="fixed" id="filter-fixed"><label for="filter-fixed">Фиксированная</label></li>
+              <li><input type="radio" name="templates" value="responsive" id="filter-responsive"><label for="filter-responsive">Резиновая</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности:</legend>
+            <ul>
+              <li><input type="checkbox" name="slider" id="filter-slider" checked><label for="filter-slider">Слайдер</label></li>
+              <li><input type="checkbox" name="featuresblock" id="filter-featuresblock"><label for="filter-featuresblock">Блок преимуществ</label></li>
+              <li><input type="checkbox" name="news" id="filter-news" checked><label for="filter-news">Новости</label></li>
+              <li><input type="checkbox" name="gallery" id="filter-gallery"><label for="filter-gallery">Галерея</label></li>
+              <li><input type="checkbox" name="cart" id="filter-cart"><label for="filter-cart">Корзина</label></li>
+            </ul>
+          </fieldset>
+          <button type="button">Показать</button>
+        </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог шаблонов</h2>
@@ -42,25 +72,26 @@
         <ul class="templates-list">
           <li>
             <h3 class="visually-hidden">Шаблон Седона</h3>
-            <a class="template-image">
+            <a class="template-image" >
               <img src="img/img-sedona.jpg" width="360" height="575" alt="Шаблон сайта города Седона">
             </a>
             <div class="template-hover">
               <p class="template-hover-header">Sedona</p>
               <p class="template-hover-text">Информационный сайт для туристов</p>
-              <a class="template-hover-price">9900 руб.</a>
+              <a class="template-hover-price" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
             <h3 class="visually-hidden">Шаблон Пинк</h3>
             <a class="template-image">
               <img src="img/img-pink.jpg" width="360" height="575" alt="Шаблон сайта приложения Пинк">
-            </a></li>
+            </a>
             <div class="template-hover">
               <p class="template-hover-header">Pink App</p>
               <p class="template-hover-text">Продуктовый лендинг приложения для iOS и Android</p>
-              <a class="template-hover-price">9900 руб.</a>
+              <a class="template-hover-price" href="#">9900 руб.</a>
             </div>
+          </li>
           <li>
             <h3 class="visually-hidden">Шаблон Барбершоп Бородинский</h3>
             <a class="template-image">
@@ -69,7 +100,7 @@
             <div class="template-hover">
               <p class="template-hover-header">Barbershop</p>
               <p class="template-hover-text">Сайт салона красоты. Для мужчин, да</p>
-              <a class="template-hover-price">9900 руб.</a>
+              <a class="template-hover-price" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
@@ -80,9 +111,10 @@
             <div class="template-hover">
               <p class="template-hover-header">Mishka</p>
               <p class="template-hover-text">Интернет-магазин вязаных игрушек</p>
-              <a class="template-hover-price">9900 руб.</a>
+              <a class="template-hover-price" href="#">9900 руб.</a>
             </div>
           </li>
+
           <li>
             <h3 class="visually-hidden">Шаблон А Plus</h3>
             <a class="template-image">
@@ -91,7 +123,7 @@
             <div class="template-hover">
               <p class="template-hover-header">A Plus</p>
               <p class="template-hover-text">Лендинг курсов повышения квалификации</p>
-              <a class="template-hover-price">9900 руб.</a>
+              <a class="template-hover-price" href="#">9900 руб.</a>
             </div>
           </li>
           <li>
@@ -102,16 +134,16 @@
             <div class="template-hover">
               <p class="template-hover-header">Кваст</p>
               <p class="template-hover-text">Промо-сайт производителя крафтового кваса</p>
-              <a class="template-hover-price">9900 руб.</a>
+              <a class="template-hover-price" href="#">9900 руб.</a>
             </div>
           </li>
         </ul>
-        <ul class="pagination">
-          <li class="pagination-current"><span>1</span></li>
-          <li><span>2</span></li>
-          <li><span>3</span></li>
+        <ul class="pagination-list">
+          <li class="pagination-current"><a class="pagination-item" href="#">1</a></li>
+          <li><a class="pagination-item" href="#">2</a></li>
+          <li><a class="pagination-item" href="#">3</a></li>
         </ul>
-        <span>Следующая</span>
+        <a class="pagination-next" href="#">Следующая</a>
       </section>
     </main>
     <footer class="main-footer">
@@ -123,7 +155,7 @@
         ул.Б.Конюшенная, д.19/8
         </p>
         <p class="footer-contacts-text">тел.+7 (812) 275-75-75</p>
-        <a class="button response-button">Напишите нам</a>
+        <a class="button response-button" href="#">Напишите нам</a>
       </div>
 
       <div class="social-links">
@@ -137,10 +169,17 @@
       </div>
     </footer>
     <div class="popup-container">
-        <h2 class="popup-title">Напишите нам</h2>
-        <p>Ваше имя</p>
-        <p>Ваша фамилия</p>
-        <!-- Здесь будет форма -->
-      </div>
+      <fieldset>
+        <legend class="visually-hidden">Форма обратной связи</legend>
+          <label for="usernamefield">Ваше имя</label><br>
+          <input type="text" name="username" id="usernamefield" placeholder="Имя Фамилия"><br>
+          <label for="emailfield">Ваш e-mail:</label><br>
+          <input type="email" name="email" id="emailfield" placeholder="email@example.com"><br>
+          <label for="commentfield">Текст письма:</label><br>
+          <textarea name="comment" id="commentfield" rows="6" placeholder="В свободной форме"></textarea><br>
+          <button type="submit">Отправить</button>
+          <button type="button">Закрыть</button>
+      </fieldset>
+    </div>
   </body>
 </html>
