@@ -121,6 +121,13 @@ a {
   text-transform: uppercase;
 }
 
+.features-item-text {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .order-button-web {
   font-size: 16px;
   line-height: 18px;
@@ -181,10 +188,8 @@ a {
 
 .description-header {
   font-size: 45px;
+  font-weight: 500;
   line-height: 45px;
-  font-weight: bold;
-  color: #000000;
-
 }
 
 .description-summary {
@@ -197,9 +202,22 @@ a {
 
 .description-figure {
   font-size: 45px;
-  line-height: 10.06px;
-  font-weight: bold;
+  line-height: 1px;
+  font-weight: 700;
   color: #000000;
+}
+
+.description-figure-percent {
+  font-size: 28px;
+  line-height: 1px;
+  font-weight: 700;
+  color: #000000;
+}
+.description-text {
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .partner-logo {
@@ -291,13 +309,15 @@ a {
 }
 
 .popup-form input {
-  width: 360px;
-  height: 50px;
+  width: 340px;
+  height: 46px;
+  padding: 0 0 0 16px;
 }
 
 .popup-form textarea {
-  width: 760px;
-  height: 118px;
+  width: 740px;
+  height: 100px;
+  padding: 14px 0 0 16px;
 }
 
 .popup-form input,
@@ -388,7 +408,7 @@ a {
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  color: #61686c;
+  color: #283136;
 }
 
 .filter-option label:hover {
@@ -407,7 +427,7 @@ a {
   height: 50px;
   font-size: 16px;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 500;
   color: #000000;
 }
 
