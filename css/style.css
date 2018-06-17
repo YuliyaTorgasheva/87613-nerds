@@ -202,17 +202,21 @@ a {
 
 .description-figure {
   font-size: 45px;
-  line-height: 1px;
+  line-height: 1;
   font-weight: 700;
   color: #000000;
 }
 
 .description-figure-percent {
+
+      top: -0.25em;
+}
+
+/*.description-figure-percent {
   font-size: 28px;
-  line-height: 1px;
   font-weight: 700;
   color: #000000;
-}
+}*/
 .description-text {
   color: #283136;
   font-size: 16px;
