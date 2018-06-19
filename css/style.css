@@ -1,7 +1,7 @@
 body,html {
   margin: 0;
   padding: 0;
-  min-width:1160px;
+  min-width:1200px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
@@ -40,6 +40,7 @@ a {
   background-color: #eeeeee;
   margin:0;
   padding:0;
+/*  outline: 3px solid blue;*/
 }
 
 .site-navigation,
@@ -65,10 +66,9 @@ a {
   font-weight: 500;
   line-height: 30px;
   text-transform: uppercase;
-
   display: flex;
-
   width:100%;
+/*  outline:3px solid yellow;*/
 }
 
 .sliders,
@@ -81,13 +81,16 @@ a {
  margin: 0 auto;
   padding:0;
 /*  width:1440px;*/
+/*outline:1px solid blue;*/
 }
 
 .container {
   margin: 0 auto;
-  padding:0 10px;
-  width:1140px;
+  padding:0 20px;
+  width:1160px;
+/*  outline:2px solid green;*/
 }
+
 .sliders .container {
   height:470px;
 }
@@ -96,6 +99,7 @@ a {
   display: flex;
   justify-content:space-between;
   align-items:center;
+/*  outline:2px solid red;*/
 }
 
 .description .container {
@@ -116,7 +120,7 @@ margin-left:200px;
 }
 
 .user-navigation {
-  margin-left:240px;
+  margin-left:230px;
 }
 
 .site-navigation,
@@ -124,6 +128,7 @@ margin-left:200px;
  {
   display: flex;
   justify-content:space-between;
+/*  outline:1px solid red;*/
 }
 
 .main-header-logo {
@@ -135,9 +140,27 @@ margin-left:200px;
   display: flex;
 }
 
+.container-firstslider {
+  background-image:url("../img/nerds-index-slide1.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.container-secondslider {
+  background-image:url("../img/nerds-index-slide2.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.container-thirdslider {
+  background-image:url("../img/nerds-index-slide3.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
 
 .slider-description {
-  width:762px;
+  width:520px;
+/*  outline:3px solid black;*/
 }
 /*<конец сеточных стилей>*/
 
@@ -160,8 +183,6 @@ margin-left:200px;
   border-bottom: 2px solid #fb565a;
 
 }
-
-
 
 .slider-slogan,
 .page-title {
@@ -215,14 +236,20 @@ margin-left:200px;
 .feature-list {
   display:flex;
   flex-direction:row;
-  flex-basis:1100px;
-
+  justify-content:space-between;
 }
 
 .feature-list li {
   width:300px;
-  margin-right: 100px;
+  margin-right:100px;
 }
+.feature-list li:last-child {
+  width:300px;
+  margin-right:80px;
+}
+
+
+
 .features-item-name {
   font-size: 24px;
   line-height: 30px;
