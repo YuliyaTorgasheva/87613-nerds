@@ -1,7 +1,7 @@
 body,html {
   margin: 0;
   padding: 0;
-  width:1440px;
+  min-width:1160px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
@@ -71,6 +71,7 @@ a {
 
   width:100%;
 }
+
 .sliders,
 .inner-page-header {
   margin: 0;
@@ -80,13 +81,13 @@ a {
 .sliders-wrapper {
  margin: 0 auto;
   padding:0;
-  width:1440px;
+/*  width:1440px;*/
 }
 
 .container {
   margin: 0 auto;
-  padding:0;
-  width:1160px;
+  padding:0 10px;
+  width:1140px;
 }
 .sliders .container {
   height:470px;
