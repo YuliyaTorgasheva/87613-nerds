@@ -10,68 +10,84 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="60" alt="Логотип студии Нердс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="studio.html">Студия</a></li>
-          <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="user-navigation">
-          <li><a href="cart.html"><img src="img/cart-icon.svg">Корзина</a></li>
-        </ul>
+        <div class="main-navigation-wrapper">
+          <div class="container">
+            <a class="main-header-logo" href="index.html">
+              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нердс">
+            </a>
+            <ul class="site-navigation">
+              <li><a href="studio.html">Студия</a></li>
+              <li><a href="clients.html">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="user-navigation">
+              <li><a href="cart.html"><img src="img/cart-icon.svg">Корзина</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <main class="container">
+    <main class="main-wrapper">
       <h1 class="visually-hidden">Студия Нердс</h1>
-      <section class="slider">
+      <section class="sliders sliders-wrapper">
         <h2 class="visually-hidden">Слоган Нердс</h2>
          <!--  первый слайд -->
-        <p class="slider-slogan">Долго, дорого, скрупулезно.</p>
-        <p class="slider-text"> Математически выверенный контент для вашего сайта или мобильного приложения.</p>
-        <a class="button studio-details-button" href="studio.html">Узнать больше</a>
-        <div>
-           <img src="img/tinified/nerds-index-slide1.png" width="700" height="410" alt="Логотип студии Нердс">
+        <div class="container">
+          <div class="slider-description">
+            <p class="slider-slogan">Долго, дорого, скрупулезно.</p>
+            <p class="slider-text"> Математически выверенный контент для вашего сайта или мобильного приложения.</p>
+            <a class="button studio-details-button" href="studio.html">Узнать больше</a>
         </div>
-        <ul class="slides-switches">
-          <li><button class="slide-btn">Первый слайд</button></li>
-          <li><button class="slide-btn">Второй слайд</button></li>
-          <li><button class="slide-btn">Третий слайд</button></li>
-        </ul>
+          <div>
+             <img src="img/tinified/nerds-index-slide1.png" width="660" height="470" alt="Логотип студии Нердс">
+          </div>
+          <ul class="slides-switches visually-hidden">
+            <li><button class="slide-btn">Первый слайд</button></li>
+            <li><button class="slide-btn">Второй слайд</button></li>
+            <li><button class="slide-btn">Третий слайд</button></li>
+          </ul>
+        </div>
         <!--  второй слайд -->
-        <p class="slider-slogan">Любим математику как никто другой</p>
-        <p class="slider-text"> Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-        <a class="studio-details" href="studio.html">Узнать больше</a>
-        <div>
-          <img src="img/tinified/nerds-index-slide2.png" width="700" height="410" alt="Логотип студии Нердс">
+        <div class="container">
+          <div class="slider-description">
+            <p class="slider-slogan">Любим математику как никто другой</p>
+            <p class="slider-text"> Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            <a class="button studio-details-button" href="studio.html">Узнать больше</a>
+          </div>
+          <div>
+            <img src="img/tinified/nerds-index-slide2.png" width="660" height="470" alt="Логотип студии Нердс">
+          </div>
+          <ul class="slides-switches visually-hidden">
+            <li><button class="slide-btn">Первый слайд</button></li>
+            <li><button class="slide-btn">Второй слайд</button></li>
+            <li><button class="slide-btn">Третий слайд</button></li>
+          </ul>
         </div>
-        <ul class="slides-switches">
-          <li><button class="slide-btn">Первый слайд</button></li>
-          <li><button class="slide-btn">Второй слайд</button></li>
-          <li><button class="slide-btn">Третий слайд</button></li>
-        </ul>
         <!--  третий слайд -->
-        <p class="slider-slogan">Только ночь, только хардкор</p>
-        <p class="slider-text"> Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-        <a class="studio-details" href="studio.html">Узнать больше</a>
-         <div>
-          <img src="img/tinified/nerds-index-slide3.png" width="700" height="410" alt="Логотип студии Нердс">
+        <div class="container">
+          <div class="slider-description">
+            <p class="slider-slogan">Только ночь, только хардкор</p>
+            <p class="slider-text"> Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            <a class="button studio-details-button" href="studio.html">Узнать больше</a>
+          </div>
+          <div>
+            <img src="img/tinified/nerds-index-slide3.png" width="660" height="470" alt="Логотип студии Нердс">
+          </div>
+          <ul class="slides-switches visually-hidden">
+            <li><button class="slide-btn">Первый слайд</button></li>
+            <li><button class="slide-btn">Второй слайд</button></li>
+            <li><button class="slide-btn">Третий слайд</button></li>
+          </ul>
         </div>
-        <ul class="slides-switches">
-          <li><button class="slide-btn">Первый слайд</button></li>
-          <li><button class="slide-btn">Второй слайд</button></li>
-          <li><button class="slide-btn">Третий слайд</button></li>
-        </ul>
       </section>
-      <section class="features">
+      <section class="features container">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="feature-list">
           <li>
             <img src="img/illustration-1.jpg" width="300" height="150" alt="Изображение десктопа">
             <h3 class="features-item-name">Веб-сайты</h3>
-            <p class="features-item-text">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+            <p class="features-item-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button order-button-web" href="#">Заказать</a>
             </li>
           <li>
@@ -88,9 +104,9 @@
           </li>
         </ul>
       </section>
-      <section class="description">
-        <h2 class="description-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+      <section class="description container">
         <div class="description-main">
+          <h2 class="description-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
           <p class="description-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="description-summary">Выполняем заказы на разработку:</p>
           <ul class="description-list">
@@ -118,7 +134,7 @@
           </ul>
       </div>
       </section>
-      <section class="partners">
+      <section class="partners container">
         <h2 class="visually-hidden">Партнеры</h2>
         <div class="partners-container">
           <ul class="partners-list">
@@ -129,26 +145,28 @@
           </ul>
         </div>
       </section>
+
     </main>
     <footer class="main-footer">
       <div class="footer-contacts-container">
-        <span>Карта</span>
-        <p class="footer-contacts-header">NЁRDS DESIGN STUDIO</p>
-        <p class="footer-contacts-text">191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
-        <p class="footer-contacts-text">
-         тел.+7 (812) 275-75-75
-        </p>
-        <a class="button response-button" href="#">Напишите нам</a>
+        <div class="address-container">
+          <p class="footer-contacts-header">NЁRDS DESIGN STUDIO</p>
+          <p class="footer-contacts-text">191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+          <p class="footer-contacts-text">тел.+7 (812) 275-75-75</p>
+          <a class="button response-button" href="#">Напишите нам</a>
+        </div>
       </div>
 
-      <div class="social-links">
+      <div class="social-links container">
         <ul class="footer-social">
           <li class="social-button"><a href="#"><img src="img/vk-icon.svg" alt="Иконка Вконтакте"></a></li>
           <li class="social-button"><a href="#"><img src="img/fb-icon.svg" alt="Иконка Фейсбука"></a></li>
           <li class="social-button"><a href="#"><img src="img/insta-icon.svg" alt="Иконка Инстаграма"></a></li>
         </ul>
-        <p class="footer-social-text">Давайте дружить, это выгодно!</p>
-        <p>Ссылка 10% для друзей из социальных сетей.</p>
+        <div class="social-slogan">
+          <p class="footer-social-text">Давайте дружить, это выгодно!</p>
+          <p>Ссылка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </footer>
     <div class="popup-container">
@@ -164,7 +182,7 @@
             <label for="commentfield">Текст письма:</label>
             <textarea name="comment" id="commentfield" rows="6" placeholder="В свободной форме"></textarea>
             <button type="submit" class="button submit-button">Отправить</button>
-            <button type="button">Закрыть</button>
+            <button type="button submmit-button">Закрыть</button>
         </fieldset>
     </form>
     </div>
