@@ -1095,19 +1095,26 @@ opacity: 0.4;
   display:inline-block;
 }
 
-.catalog-list-sorter path {
-  fill: #ededed;
+.catalog-list-sorter {
+  opacity: 0.2;
+  color: #a6a6a6;
 }
 
-.catalog-list-sorter:hover path {
-  fill: #a6a6a6;
+.catalog-list-sorter:hover {
+  color: #a6a6a6;
+  opacity: 1;
 }
 
-.catalog-list-sorter:focus path,
-.catalog-list-sorter:active path {
-  fill: #231f20;
+.catalog-list-sorter:focus,
+.catalog-list-sorter:active {
+  color: #231f20;
+  opacity: 1;
 }
 
+.catalog-list-sorter-active {
+  color: #231f20;
+  opacity: 1;
+}
 .catalog-list-text {
   font-size: 18px;
   line-height: 18px;
@@ -1136,6 +1143,10 @@ opacity: 0.4;
 .catalog-list-button:focus,
 .catalog-list-button:active {
   opacity: 1;
+}
+
+.catalog-list-button-active {
+opacity: 1;
 }
 
 .templates-list li {
