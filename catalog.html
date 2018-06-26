@@ -38,15 +38,26 @@
         <section class="filters-form-container">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
           <form class="filter" action="/echo" method="post" oninput="minpriceoutput.value=minpriceinput.value; maxpriceoutput.value=maxpriceinput.value">
-            <fieldset>
-            <legend>Стоимость</legend>
+            <!-- <fieldset>
+            <legend>Стоимость:</legend>
             <input type="range" name="minpriceinput" id="minprice-input" min="0" max="15000" step="100"><br>
             <input type="range" name="maxpriceinput" id="maxprice-input" min="0" max="15000" step="100">
-            <span>От</span> <output name="minpriceoutput">0</output>
-
-            <span>до</span><output name="maxpriceoutput">15000</output>
             </fieldset>
-            <fieldset>
+            <fieldset> -->
+              <legend>Стоимость:</legend>
+            <div class="range-container">
+              <div class="range-input">
+                <div class="line">
+                  </div>
+                  <img src="img/filter-button.svg" alt="Кнопка бегунка">
+                  <img src="img/filter-button.svg" alt="Кнопка бегунка">
+
+              </div>
+              <div class="range-output">
+             <label for="minpriceoutput">От</label><output name="minpriceoutput">0</output>
+            <label for="maxpriceoutput">до</label></span><output name="maxpriceoutput">15 000</output>
+             </div>
+            </div>
             <legend>Сетка:</legend>
             <div class="radio-filters">
               <ul>
@@ -82,7 +93,7 @@
         <section class="catalog-container">
           <h2 class="visually-hidden">Каталог шаблонов</h2>
           <div class="catalog-list-container">
-            <p class="catalog-list-text">Сортировать</p>
+            <p class="catalog-list-text">Сортировать:</p>
             <ul class="catalog-list">
               <li><a class="catalog-list-button catalog-list-button-active" href="#">По цене</a></li>
               <li><a class="catalog-list-button" href="#">По типу</a></li>
@@ -99,26 +110,26 @@
                 <img src="img/img-sedona.jpg" width="358"  height="574" alt="Шаблон сайта города Седона">
                 <div class="template-hover-bottom">
                   <p class="template-hover-header">Sedona</p>
-                  <p class="template-hover-text">Информационный сайт для туристов</p>
-                  <a class="button template-hover-button" href="#">9900 руб.</a>
+                  <p class="template-hover-text">Информационный сайт<br> для туристов</p>
+                  <a class="button template-hover-button" href="#">9 900 руб.</a>
                 </div>
             </li>
             <li>
               <h3 class="visually-hidden">Шаблон Пинк</h3>
-              <img src="img/img-pink.jpg" width="358"  height="574" alt="Шаблон сайта приложения Пинк">
+              <img src="img/img-pink.jpg" width="359"  height="574" alt="Шаблон сайта приложения Пинк">
               <div class="template-hover-bottom">
                 <p class="template-hover-header">Pink App</p>
                 <p class="template-hover-text">Продуктовый лендинг приложения для iOS и Android</p>
-                <a class="button template-hover-button" href="#">9900 руб.</a>
+                <a class="button template-hover-button" href="#">9 900 руб.</a>
               </div>
             </li>
             <li>
               <h3 class="visually-hidden">Шаблон Барбершоп Бородинский</h3>
-              <img src="img/img-barbershop.jpg" width="358"  height="574" alt="Шаблон сайта Барбершопа Бородинский">
+              <img src="img/img-barbershop.jpg" width="359"  height="574" alt="Шаблон сайта Барбершопа Бородинский">
               <div class="template-hover-bottom">
                 <p class="template-hover-header">Barbershop</p>
-                <p class="template-hover-text">Сайт салона красоты. Для мужчин, да</p>
-                <a class="button template-hover-button" href="#">9900 руб.</a>
+                <p class="template-hover-text">Сайт салона красоты.<br> Для мужчин, да</p>
+                <a class="button template-hover-button" href="#">9 900 руб.</a>
               </div>
             </li>
             <li>
@@ -126,26 +137,26 @@
               <img src="img/img-mishka.jpg" width="358"  height="574" alt="Шаблон сайта интернет-магазина вязаных игрушек Мишка">
               <div class="template-hover-bottom">
                 <p class="template-hover-header">Mishka</p>
-                <p class="template-hover-text">Интернет-магазин вязаных игрушек</p>
-                <a class="button template-hover-button" href="#">9900 руб.</a>
+                <p class="template-hover-text">Интернет-магазин<br> вязаных игрушек</p>
+                <a class="button template-hover-button" href="#">9 900 руб.</a>
               </div>
             </li>
             <li>
               <h3 class="visually-hidden">Шаблон А Plus</h3>
-              <img src="img/img-aplus.jpg" width="358"  height="574" alt="Шаблон сайта курсов А+">
+              <img src="img/img-aplus.jpg" width="359"  height="574" alt="Шаблон сайта курсов А+">
               <div class="template-hover-bottom">
                 <p class="template-hover-header">A Plus</p>
                 <p class="template-hover-text">Лендинг курсов повышения квалификации</p>
-                <a class="button template-hover-button" href="#">9900 руб.</a>
+                <a class="button template-hover-button" href="#">9 900 руб.</a>
               </div>
             </li>
             <li>
               <h3 class="visually-hidden">Шаблон Кваст</h3>
-              <img src="img/img-kvast.jpg" width="358"  height="574" alt="Шаблон сайта производителя кваса Кваст">
+              <img src="img/img-kvast.jpg" width="359"  height="574" alt="Шаблон сайта производителя кваса Кваст">
               <div class="template-hover-bottom">
                 <p class="template-hover-header">Кваст</p>
                 <p class="template-hover-text">Промо-сайт производителя крафтового кваса</p>
-                <a class="button template-hover-button" href="#">9900 руб.</a>
+                <a class="button template-hover-button" href="#">9 900 руб.</a>
               </div>
             </li>
           </ul>
@@ -169,8 +180,8 @@
         <div class="map-container container">
           <div class="address-container">
             <p class="footer-contacts-header">NЁRDS DESIGN STUDIO</p>
-            <p class="footer-contacts-text">191186, Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
-            <p class="footer-contacts-text">тел.+7 (812) 275-75-75</p>
+            <p class="footer-contacts-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
+            <p class="footer-contacts-text">тел. +7 (812) 275-75-75</p>
             <a class="button response-button" href="#">Напишите нам</a>
           </div>
         </div>
