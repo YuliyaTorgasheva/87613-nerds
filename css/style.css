@@ -786,7 +786,7 @@ hr {
   margin-left: -480px;
   margin-top: -293px;
   z-index: 3;
- /* display: none;*/
+  display: none;
 }
 
 .popup-title-container {
