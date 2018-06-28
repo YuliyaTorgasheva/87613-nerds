@@ -786,7 +786,7 @@ hr {
   margin-left: -480px;
   margin-top: -293px;
   z-index: 3;
-  /*display: none;*/
+ /* display: none;*/
 }
 
 .popup-title-container {
@@ -997,7 +997,7 @@ hr {
 
 }
 
-.range-output output {
+.range-output .output {
   display: inline-block;
   width:80px;
   border-radius: 3px;
@@ -1012,11 +1012,11 @@ hr {
   padding-top: 8px;
 
 }
-.range-output output:first-of-type {
+.range-output .output:first-of-type {
   margin-right: 30px;
 }
 
-.range-output label {
+.range-output span {
   color: #283136;
   font-size: 16px;
   font-weight: 400;

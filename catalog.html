@@ -37,31 +37,34 @@
       <section class="filters container">
         <section class="filters-form-container">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
-          <form class="filter" action="/echo" method="post" oninput="minpriceoutput.value=minpriceinput.value; maxpriceoutput.value=maxpriceinput.value">
-            <legend>Стоимость:</legend>
-            <div class="range-container">
-              <div class="range-input">
-                <div class="line">
+          <form class="filter" action="/echo" method="post">
+            <fieldset>
+              <legend>Стоимость:</legend>
+              <div class="range-container">
+                <div class="range-input">
+                  <div class="line">
+                  </div>
+                  <img src="img/filter-button.svg" alt="Кнопка бегунка">
+                  <img src="img/filter-button.svg" alt="Кнопка бегунка">
                 </div>
-                <img src="img/filter-button.svg" alt="Кнопка бегунка">
-                <img src="img/filter-button.svg" alt="Кнопка бегунка">
+                <div class="range-output">
+                  <span>От</span><div class="output">0</div>
+                  <span>до</span><div class="output">15 000</div>
+                </div>
               </div>
-              <div class="range-output">
-             <label for="minpriceoutput">От</label><output name="minpriceoutput">0</output>
-            <label for="maxpriceoutput">до</label></span><output name="maxpriceoutput">15 000</output>
-             </div>
-            </div>
-            <legend>Сетка:</legend>
-            <div class="radio-filters">
-              <ul>
-                <li class="filter-option"><input class="filter-input filter-input-radio" type="radio" name="templates" value="adaptive" id="filter-adaptive" checked><label for="filter-adaptive">Адаптивная</label>
-                </li>
-                <li class="filter-option"><input class="filter-input filter-input-radio" type="radio" name="templates" value="fixed" id="filter-fixed"><label for="filter-fixed">Фиксированная</label>
-                </li>
-                <li class="filter-option"><input class="filter-input filter-input-radio" type="radio" name="templates" value="responsive" id="filter-responsive"><label for="filter-responsive">Резиновая</label>
-                </li>
-              </ul>
-            </div>
+            </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <div class="radio-filters">
+                <ul>
+                  <li class="filter-option"><input class="filter-input filter-input-radio" type="radio" name="templates" value="adaptive" id="filter-adaptive" checked><label for="filter-adaptive">Адаптивная</label>
+                  </li>
+                  <li class="filter-option"><input class="filter-input filter-input-radio" type="radio" name="templates" value="fixed" id="filter-fixed"><label for="filter-fixed">Фиксированная</label>
+                  </li>
+                  <li class="filter-option"><input class="filter-input filter-input-radio" type="radio" name="templates" value="responsive" id="filter-responsive"><label for="filter-responsive">Резиновая</label>
+                  </li>
+                </ul>
+              </div>
             </fieldset>
             <fieldset>
             <legend>Особенности:</legend>
@@ -93,8 +96,8 @@
               <li><a class="catalog-list-button" href="#">По названию</a></li>
             </ul>
             <ul class="catalog-sort">
-              <li><a class="catalog-list-sorter catalog-list-sorter-active" href="#"><img src="img/icon-down-dir.svg"></a></li>
-              <li><a class="catalog-list-sorter" href="#"><img src="img/icon-up-dir.svg"></a></li>
+              <li><a class="catalog-list-sorter catalog-list-sorter-active" href="#"><img src="img/icon-down-dir.svg" alt="Сортировать по убыванию"></a></li>
+              <li><a class="catalog-list-sorter" href="#"><img src="img/icon-up-dir.svg" alt="Сортировать по возрастанию"></a></li>
             </ul>
           </div>
           <ul class="templates-list">
