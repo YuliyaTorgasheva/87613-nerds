@@ -15,13 +15,13 @@
             <a class="main-header-logo" href="index.html">
               <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нердс">
             </a>
-            <ul class="site-navigation">
+            <ul class="site-navigation catalog-menu">
               <li><a href="studio.html">Студия</a></li>
               <li><a href="clients.html">Клиенты</a></li>
               <li><a class="site-navigation-current" href="catalog.html">Магазин</a></li>
               <li><a href="contacts.html">Контакты</a></li>
             </ul>
-            <ul class="user-navigation">
+            <ul class="user-navigation catalog-menu">
               <li><a class="cart-link" href="cart.html">Корзина</a></li>
             </ul>
           </div>
@@ -38,12 +38,7 @@
         <section class="filters-form-container">
           <h2 class="visually-hidden">Фильтр шаблонов</h2>
           <form class="filter" action="/echo" method="post" oninput="minpriceoutput.value=minpriceinput.value; maxpriceoutput.value=maxpriceinput.value">
-            <!-- <fieldset>
-            <legend>Стоимость:</legend>
-            <input type="range" name="minpriceinput" id="minprice-input" min="0" max="15000" step="100"><br>
-            <input type="range" name="maxpriceinput" id="maxprice-input" min="0" max="15000" step="100">
-            </fieldset>
-            <fieldset> -->
+
               <legend>Стоимость:</legend>
             <div class="range-container">
               <div class="range-input">
@@ -109,7 +104,7 @@
                 <img src="img/img-sedona.jpg" width="358"  height="574" alt="Шаблон сайта города Седона">
                 <div class="template-hover-bottom">
                   <p class="template-hover-header">Sedona</p>
-                  <p class="template-hover-text">Информационный сайт<br> для туристов</p>
+                  <p class="template-hover-text sedona-hover-text">Информационный сайт для туристов</p>
                   <a class="button template-hover-button" href="#">9 900 руб.</a>
                 </div>
             </li>
@@ -127,7 +122,7 @@
               <img src="img/img-barbershop.jpg" width="359"  height="574" alt="Шаблон сайта Барбершопа Бородинский">
               <div class="template-hover-bottom">
                 <p class="template-hover-header">Barbershop</p>
-                <p class="template-hover-text">Сайт салона красоты.<br> Для мужчин, да</p>
+                <p class="template-hover-text barber-hover-text">Сайт салона красоты. Для мужчин, да</p>
                 <a class="button template-hover-button" href="#">9 900 руб.</a>
               </div>
             </li>
@@ -136,7 +131,7 @@
               <img src="img/img-mishka.jpg" width="358"  height="574" alt="Шаблон сайта интернет-магазина вязаных игрушек Мишка">
               <div class="template-hover-bottom">
                 <p class="template-hover-header">Mishka</p>
-                <p class="template-hover-text">Интернет-магазин<br> вязаных игрушек</p>
+                <p class="template-hover-text mishka-hover-text">Интернет-магазин вязаных игрушек</p>
                 <a class="button template-hover-button" href="#">9 900 руб.</a>
               </div>
             </li>
