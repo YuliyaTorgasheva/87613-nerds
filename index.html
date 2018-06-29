@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"subset="cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -38,11 +40,6 @@
             <p class="slider-text"> Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a class="button studio-details-button" href="studio.html">Узнать больше</a>
           </div>
-          <div class="slider-controls">
-            <i class="active"></i>
-            <i></i>
-            <i></i>
-          </div>
         </div>
         <!--  второй слайд -->
         <div class="container container-secondslider">
@@ -51,11 +48,6 @@
             <p class="slider-text"> Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a class="button studio-details-button" href="studio.html">Узнать больше</a>
           </div>
-         <div class="slider-controls">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
-        </div>
         </div>
         <!--  третий слайд -->
         <div class="container container-thirdslider">
@@ -64,30 +56,30 @@
             <p class="slider-text"> Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
             <a class="button studio-details-button" href="studio.html">Узнать больше</a>
           </div>
-          <div class="slider-controls">
+        </div>
+        <div class="slider-controls">
             <i class="active"></i>
             <i></i>
             <i></i>
-          </div>
         </div>
       </section>
       <section class="features container">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="feature-list">
           <li>
-            <img src="img/illustration-1.jpg" width="300" height="146" alt="Изображение десктопа">
+            <img src="img/illustration-1.png" width="300" height="146" alt="Изображение десктопа">
             <h3 class="features-item-name">Веб-сайты</h3>
             <p class="features-item-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button order-button-web" href="#">Заказать</a>
             </li>
           <li>
-            <img src="img/illustration-2.jpg" width="300" height="146" alt="Изображение мобильных телефонов">
+            <img src="img/illustration-2.png" width="300" height="146" alt="Изображение мобильных телефонов">
             <h3 class="features-item-name">Приложения</h3>
             <p class="features-item-text">Покорите топ-10 приложений в AppStore и GooglePlay</p>
             <a class="button order-button-app"  href="#">Заказать</a>
           </li>
           <li>
-            <img src="img/illustration-3.jpg" width="300" height="146" alt="Изображение экрана проектора с презентацией">
+            <img src="img/illustration-3.png" width="300" height="146" alt="Изображение экрана проектора с презентацией">
             <h3 class="features-item-name">Презентации</h3>
             <p class="features-item-text">Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="button order-button-prez" href="#">Заказать</a>
@@ -96,9 +88,10 @@
       </section>
       <hr>
       <section class="description container">
+        <h2 class="visually-hidden">Описание</h2>
         <div class="description-main">
-          <h2 class="description-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-          <p class="description-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br> превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="description-header">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p class="description-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="description-summary">Выполняем заказы на разработку:</p>
           <ul class="description-list">
             <li class="description-text">Веб-сайтов любой сложности</li>
@@ -142,13 +135,13 @@
     <footer class="main-footer">
       <div class="footer-contacts-container">
         <div class="marker-container">
-          <img src="img/map-marker.png" alt="Маркер Нердс">
+          <img src="img/map-marker.png" width="367" height="190" alt="Маркер Нердс">
         </div>
         <div class="map-container container">
           <div class="address-container">
             <p class="footer-contacts-header">NЁRDS DESIGN STUDIO</p>
             <p class="footer-contacts-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p class="footer-contacts-text">тел. +7 (812) 275-75-75</p>
+            <p class="footer-contacts-text">тел. +7 <span>(812)</span> 275-<span>75</span>-75</p>
             <a class="button response-button" href="#">Напишите нам</a>
           </div>
         </div>
