@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700 subset=cyrillic,cyrillic-ext');
 body,html {
   margin: 0;
   padding: 0;
@@ -1064,7 +1065,6 @@ a {
 .filter legend {
   font-size: 18px;
   line-height: 30px;
-  letter-spacing: 10;
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
