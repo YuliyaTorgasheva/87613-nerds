@@ -1459,9 +1459,6 @@ a {
 }
 
 .pagination-list {
-  -webkit-box-pack:start;
-      -ms-flex-pack:start;
-          justify-content:start;
   padding-top: 26px;
 
 }
